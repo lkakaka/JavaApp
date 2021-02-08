@@ -6,7 +6,7 @@ import java.util.List;
 public class TestAgentMain {
     public static void main(String[] args) throws IOException, AttachNotSupportedException, AgentLoadException, AgentInitializationException {
         //获取当前系统中所有 运行中的 虚拟机
-        System.out.println("running JVM start ");
+        System.out.println("running JVM start... ");
         List<VirtualMachineDescriptor> list = VirtualMachine.list();
         for (VirtualMachineDescriptor vmd : list) {
             //如果虚拟机的名称为 xxx 则 该虚拟机为目标虚拟机，获取该虚拟机的 pid
